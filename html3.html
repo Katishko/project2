@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Современный UX/UI сайт</title>
+    <link rel="stylesheet" href="css3.css">
+    <script src="script3.js" defer></script>
+   
+</head>
+<body>
+
+    <!-- Навигация -->
+    <header>
+        <div class="logo">UXWeb</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+        <button class="btn" onclick="openModal()">Заказать</button>
+    </header>
+
+    <!-- Главная секция -->
+    <section id="home">
+        <h1>Современный UX/UI Дизайн</h1>
+        <p>Мы создаем удобные и красивые сайты.</p>
+        <button class="btn">Узнать больше</button>
+    </section>
+
+    <!-- О нас -->
+    <section id="about">
+        <h2>О нашей компании</h2>
+        <p>Мы разрабатываем удобные интерфейсы, анализируем поведение пользователей и улучшаем конверсию.</p>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services">
+        <h2>Наши услуги</h2>
+        <div class="service-container">
+            <div class="service-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Веб-дизайн</h3>
+                <p>Создание стильных и современных сайтов.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-code"></i>
+                <h3>Разработка</h3>
+                <p>Верстка и программирование под любые платформы.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>SEO & Маркетинг</h3>
+                <p>Продвижение сайтов и повышение продаж.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="testimonials">
+        <h2>Отзывы клиентов</h2>
+        <div class="testimonial">
+            <p>"Отличный сервис, сайт удобный и красивый!"</p>
+            <h4>- Иван Иванов</h4>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact">
+        <h2>Свяжитесь с нами</h2>
+        <form>
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Ваш email" required>
+            <textarea placeholder="Ваше сообщение" required></textarea>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <p>© 2025 UXWeb. Все права защищены.</p>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Закажите консультацию</h2>
+            <p>Мы свяжемся с вами в ближайшее время.</p>
+            <button class="btn">Оставить заявку</button>
+        </div>
+    </div>
+
+</body>
+</html>
